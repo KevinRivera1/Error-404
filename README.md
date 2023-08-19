@@ -1,5 +1,7 @@
 
- <img src="img/foto1.png">
+ <div aling="center">
+    <img src="img/foto1.png">
+ </div>
 
  # Página de Error 404 Responsive
 
