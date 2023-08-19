@@ -1,72 +1,110 @@
-*{
-    box-sizing: border-box;
+* {
+    box-sizing : border-box;
     font-family: 'Inconsolata', monospace;
-    margin: 5px;
 }
 
-.contenido{
-    display: flex;
+/* Estilo del encabezado */
+.header {
+    color           : #333;
+    text-align      : center;
 }
-.contenido__img{
-    display: flex;
-    width: fit-content;
-    height: fit-content;
+
+.header__container {
+    max-width: 80%;
+    margin   : 0 auto;
+}
+
+.header__titulo {
+    font-size: 1.5rem;
+}
+
+/* Estilo de la sección de contenido */
+.main {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    align-items    : center;
+    place-content  : center;
+    padding        : 2rem 0;
+}
+
+.contenido {
+    display        : flex;
+    align-items    : center;
     justify-content: center;
-    align-items: center;
-}
-.espanta{
-    margin:50px;
-    height: 200px;
-    width: auto;
-}
-.section__texto--titulo h1{
-    font-size:42px;
+    text-align     : center;
+    padding        : 2rem 0;
+    width          : 50%;
+    overflow       : hidden;
 }
 
-.section__texto--parrafo p{
-    margin-top:30px;
+.contenido__img {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 100%;
+    object-fit     : cover;
 }
 
-.contenido__btn{
-    margin-top:30px;
-}
-.contenido__btn--color{
-    cursor: pointer;
-    color:white;
-    padding: 20px;
-    font-weight: bold;
-    background-color: #333333;
+.contenido__img--espanta {
+    width : 80%;
+    height: auto;
 }
 
-@media screen and (min-width: 920px) {
-    body{
-        display: flex;
-        flex-direction:row;
+/* Estilo de la sección principal */
+.section {
+    background-color: #f5f5f5;
+    text-align      : center;
+    padding         : 2.7rem 0;
+}
+
+.section__texto {
+    max-width: 80%;
+    margin   : 0 auto;
+}
+
+.section__texto--titulo {
+    font-size    : 2rem;
+    margin-bottom: 1rem;
+}
+
+.section__texto--parrafo {
+    font-size    : 1rem;
+    line-height  : 1.5;
+    margin-bottom: 2rem;
+}
+
+/* Estilo de los botones */
+.section__botones {
+    color  : #fff;
+    padding: 1rem 0;
+}
+
+.section__botones--contenido {
+    max-width: 80%;
+    margin   : 0 auto;
+}
+
+.section__botones--contenido__btn {
+    background-color: #ff5722;
+    color           : #fff;
+    border          : none;
+    padding         : 1rem 2rem;
+    font-size       : 1rem;
+    cursor          : pointer;
+}
+
+/* Estilo para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+
+    .header__container,
+    .section__texto,
+    .section__botones--contenido {
+        max-width: 100%;
     }
-    .contenido{
-        margin-top:130px;
-    }
-    header{
-        position: absolute;
-    }
-    .section{
-        margin-top:190px;
-    }
-    .botones{
-        position: relative;
-        margin-top:50px;
-        right:0px ;
-    }
-    .espanta{
-        height: 350px;
-        width: auto;
-    }
-    .section__texto--titulo h1{
-        font-size:60px;
-        margin-right: 200px;
-        margin-bottom: 50px;
-    }
-    .section__texto--parrafo p{
-        margin-right: 450px;
+
+    .section__botones--contenido__btn {
+        padding  : 0.75rem 1.5rem;
+        font-size: 0.9rem;
     }
 }
