@@ -5,8 +5,8 @@
 
 /* Estilo del encabezado */
 .header {
-    color           : #333;
-    text-align      : center;
+    color     : #333;
+    text-align: center;
 }
 
 .header__container {
@@ -107,4 +107,30 @@
         padding  : 0.75rem 1.5rem;
         font-size: 0.9rem;
     }
+}
+
+@media screen and (max-width: 390px) {
+
+    .contenido__img--espanta {
+        width : 100%;
+        height: auto;
+    }
+
+    .contenido {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+
+    .contenido__img--espanta {
+        width : 70%;
+        height: auto;
+    }
+
+    .contenido {
+        width: 49%;
+    }
+
 }
