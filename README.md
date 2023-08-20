@@ -1,11 +1,7 @@
-
+ # Página de Error 404
  <div align="center">
     <img src="img/foto1.png">
  </div>
-
- # Página de Error 404 Responsive
-
-![Captura de pantalla](screenshot.png)
 
 ## Descripción
 
