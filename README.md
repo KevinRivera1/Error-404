@@ -1,6 +1,6 @@
  # Página de Error 404
  <div align="center">
-    <img src="img/foto1.png">
+    <img src="img/foto1.webp">
  </div>
 
 ## Descripción
