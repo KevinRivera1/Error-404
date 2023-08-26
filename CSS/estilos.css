@@ -1,6 +1,7 @@
 * {
     box-sizing : border-box;
     font-family: 'Inconsolata', monospace;
+    user-select: none;
 }
 
 /** Estilo del encabezado */
@@ -85,6 +86,13 @@
     font-size       : 1rem;
     font-weight     : 900;
     cursor          : pointer;
+    transition      : all 0.3s ease;
+}
+
+.section__botones--contenido__btn:hover {
+    background-color: hsl(250, 36%, 16%);
+    color           : #fff;
+    scale           : 1.1;
 }
 
 /* Estilo para pantallas pequeñas */
