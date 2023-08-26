@@ -15,6 +15,8 @@ Este proyecto es una página de error 404 responsive diseñada para brindar una 
 - [Personalización](#personalización)
 - [Contribución](#contribución)
 
+## Vista Previa
+https://kevinrivera1.github.io/Error-404/
 
 ## Requisitos
 
